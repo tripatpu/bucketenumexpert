@@ -8,6 +8,21 @@ rewrite. Everything below describes **v4**.
 
 ---
 
+
+```powershell
+python bucket_exposure_check_v4.py --scope subsplash.txt --authorized --program "Subsplash" --ct --dns --deep --resume --out subsplash_findings
+```
+
+python bucket_exposure_check_v4.py --scope subsplash.txt --authorized --program "Subsplash" --ct --dns --deep --resume --out subsplash_findings
+
+python bucket_exposure_check_v4.py --scope subsplash.txt --authorized --program "Subsplash" --ct --dns --max-candidates 800 --out subsplash_findings
+
+scope.txt is like 
+
+subsplash.com
+*.subsplash.com
+Subsplash
+
 ## The one problem v4 exists to solve
 
 Listing every bucket whose name contains your token produces almost nothing
